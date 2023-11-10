@@ -30,7 +30,6 @@ def Main():
         if keyboard.is_pressed('esc'):
             clientSocket.send(bytes("server shutting down", "utf-8"))
             sys.exit()
-            hi
         
 
 if __name__=='__main__':
