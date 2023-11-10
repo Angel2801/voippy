@@ -9,7 +9,8 @@ from Audio.audiod import AudioPlayer
 
 def Main():
     mic = AudioRecord()
-    IP = "10.2.90.86"
+    # IP = "10.2.90.86"
+    IP = "192.168.1.7"
     PORT = 1234
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # sock.bind((socket.gethostname(), 5555))
