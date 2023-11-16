@@ -18,12 +18,12 @@ class AudioRecord:
         # info = self.p.get_host_api_info_by_index(0)
         # numdevices = info.get('deviceCount')
         # for i in range(0, numdevices):
-        #      if (self.p.get_device_info_by_host_api_device_index(0, i).get('maxInputChannels')) > 0:
+        #      if (self.p.get_device_info_by_host_api_device_index(0, i).get('maxOutputChannels')) > 0:
         #          print("Input Device id ", i, " - ", self.p.get_device_info_by_host_api_device_index(0, i).get('name'))
         
         stream = self.p.open(
             format = self.sample_format, channels=self.channels,
-            rate = self.rate, input=True, input_device_index=0,
+            rate = self.rate, input=True, input_device_index=8,
             frames_per_buffer = self.CHUNK
         )
         print("recording...")

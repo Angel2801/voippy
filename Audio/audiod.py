@@ -17,7 +17,6 @@ class AudioPlayer:
             channels=self.channels,
             rate=self.rate,
             output=True,
-            output_device_index=1
         )
         stream.write(audio_data)
         stream.stop_stream()
