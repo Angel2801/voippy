@@ -23,7 +23,7 @@ class AudioRecord:
         
         stream = self.p.open(
             format = self.sample_format, channels=self.channels,
-            rate = self.rate, input=True, input_device_index=8,
+            rate = self.rate, input=True, 
             frames_per_buffer = self.CHUNK
         )
         print("recording...")
